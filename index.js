@@ -1,4 +1,6 @@
 const Discord = require('discord.js');
+import { token } from './config';
+
 const client  = new Discord.Client();
 
 const LISTENING_CHANNEL_NAME = 'bot-test';   // Channel bot will monitor
@@ -34,4 +36,4 @@ client.on('message', message => {
 
 
 // Login to bot
-client.login('NzU3MDYyMTgyNjg3OTk4MDIy.X2a7GQ.Ma6l2q57mLh3GOLMy2jz4C7mCdk');
+client.login(token);
