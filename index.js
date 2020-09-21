@@ -48,4 +48,4 @@ client.on('message', message => {
 
 
 // Login to bot
-client.login(config.token);
+client.login(process.env.TOKEN);
