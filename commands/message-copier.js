@@ -18,6 +18,6 @@ module.exports = {
       .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 
     args.targetChannel.send(applicationEmbed);
-    args.targetChannel.send(message.toString());
+    args.targetChannel.send(`> ${ message.toString() }`);
   }
 }
